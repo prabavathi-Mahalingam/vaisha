@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday</title>
+
+```
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #121212;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .container {
+        margin: 40px auto;
+        padding: 20px;
+        width: 80%;
+        background: #1e1e1e;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+
+    h1 {
+        color: #ff4da6;
+    }
+
+    .details {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    button {
+        background: #ff4da6;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #ff1a8c;
+    }
+
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .photos img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: transform 0.3s;
+    }
+
+    .photos img:hover {
+        transform: scale(1.05);
+    }
+
+    #photoSection {
+        display: none;
+    }
+
+    footer {
+        margin-top: 20px;
+        color: #aaa;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1> Happy Birthday Thangameyy </h1>
+
+```
+<!-- DETAILS -->
+<div class="details">
+    <p><b>Name:</b> Vaishya</p>
+    <p><b>Date of Birth:</b> 19 March 2010</p>
+    <p><b>Hobbies:</b> Dancing, Music, Traveling</p>
+</div>
+
+<!-- MESSAGE -->
+<h2>💌 Special Message</h2>
+<p>
+    Wishing you a day filled with love, joy, and laughter 💖 <br>
+    You are the most special person in my life <br>
+    Stay happy always!
+</p>
+
+<!-- MEMORIES -->
+<h2>📸 Memories</h2>
+<button onclick="showPhotos()">Click to See Memories 💖</button>
+
+<div id="photoSection" class="photos">
+    <img src="photos/image1.jpeg" alt="Memory 1">
+    <img src="photos/image2.jpeg" alt="Memory 2">
+    <img src="photos/image3.jpeg" alt="Memory 3">
+    <img src="photos/image4.jpeg" alt="Memory 4">
+    <img src="photos/image5.jpeg" alt="Memory 5">
+</div>
+
+<!-- SURPRISE -->
+<h2>🎁 Surprise</h2>
+<button onclick="showMessage()">Click for Surprise</button>
+
+<p id="surpriseMsg" style="margin-top:20px; font-weight:bold;"></p>
+
+<footer>Made with ❤️ by You</footer>
+```
+
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("surpriseMsg").innerHTML =
+        "🎉 You are the best sister ever! 💖 May all your dreams come true! I'm always grateful to have you in my life!🌟";
+    }
+
+    function showPhotos() {
+        document.getElementById("photoSection").style.display = "grid";
+    }
+</script>
+
+</body>
+</html>
